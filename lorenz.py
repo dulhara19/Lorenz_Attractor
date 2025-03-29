@@ -165,7 +165,7 @@ ani = animation.FuncAnimation(fig, update, frames=num_steps, interval=1, blit=Tr
 
 plt.show()
 
-# ##++++++++++A simple chaotic stock price model based on a modified Lorenz system.++++
+# ##=========A simple chaotic stock price model based on a modified Lorenz system======
 
 # import numpy as np
 # import matplotlib.pyplot as plt

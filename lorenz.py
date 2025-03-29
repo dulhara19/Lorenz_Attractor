@@ -23,18 +23,18 @@
 #     return np.array([x_dot, y_dot, z_dot])
 
 
-# dt = 0.01
-# num_steps = 10000
+dt = 0.01
+num_steps = 10000
 
-# xyzs = np.empty((num_steps + 1, 3))  # Need one more for the initial values
-# xyzs[0] = (0., 1., 1.05)  # Set initial values
-# # Step through "time", calculating the partial derivatives at the current point
-# # and using them to estimate the next point
-# for i in range(num_steps):
-#     xyzs[i + 1] = xyzs[i] + lorenz(xyzs[i]) * dt
+xyzs = np.empty((num_steps + 1, 3))  # Need one more for the initial values
+xyzs[0] = (0., 1., 1.05)  # Set initial values
+# Step through "time", calculating the partial derivatives at the current point
+# and using them to estimate the next point
+for i in range(num_steps):
+    xyzs[i + 1] = xyzs[i] + lorenz(xyzs[i]) * dt
 
-# # Plot
-# ax = plt.figure().add_subplot(projection='3d')
+# Plot
+ax = plt.figure().add_subplot(projection='3d')
 
 ax.plot(*xyzs.T, lw=0.5)
 ax.set_xlabel("X Axis")

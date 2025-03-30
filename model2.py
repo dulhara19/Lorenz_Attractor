@@ -4,15 +4,15 @@
 # import matplotlib.pyplot as plt
 # from scipy.integrate import solve_ivp
 
-# def stock_market(t, xyz, alpha=0.1, beta=0.2, gamma=0.3):
-#     """
-#     A simple chaotic stock price model based on a modified Lorenz system.
-#     """
-#     x, y, z = xyz
-#     dx_dt = alpha * (y - x)  # Trend following behavior
-#     dy_dt = beta * (x - y - x*z)  # Market reaction with external effects
-#     dz_dt = gamma * (x*y - z)  # Long-term market behavior
-#     return [dx_dt, dy_dt, dz_dt]
+def stock_market(t, xyz, alpha=0.1, beta=0.2, gamma=0.3):
+    """
+    A simple chaotic stock price model based on a modified Lorenz system.
+    """
+    x, y, z = xyz
+    dx_dt = alpha * (y - x)  # Trend following behavior
+    dy_dt = beta * (x - y - x*z)  # Market reaction with external effects
+    dz_dt = gamma * (x*y - z)  # Long-term market behavior
+    return [dx_dt, dy_dt, dz_dt]
 
 # Time range
 t_span = (0, 50)

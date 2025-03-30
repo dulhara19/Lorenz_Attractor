@@ -1,8 +1,8 @@
-# ##=========A simple chaotic stock price model based on a modified Lorenz system======
+##=========A simple chaotic stock price model based on a modified Lorenz system======
 
-# import numpy as np
-# import matplotlib.pyplot as plt
-# from scipy.integrate import solve_ivp
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
 
 def stock_market(t, xyz, alpha=0.1, beta=0.2, gamma=0.3):
     """

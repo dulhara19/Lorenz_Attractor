@@ -14,15 +14,15 @@
 #     dz_dt = gamma * (x*y - z)  # Long-term market behavior
 #     return [dx_dt, dy_dt, dz_dt]
 
-# # Time range
-# t_span = (0, 50)
-# t_eval = np.linspace(t_span[0], t_span[1], 5000)
+# Time range
+t_span = (0, 50)
+t_eval = np.linspace(t_span[0], t_span[1], 5000)
 
-# # Initial conditions
-# initial_conditions = [1, 1, 1.5]
+# Initial conditions
+initial_conditions = [1, 1, 1.5]
 
-# # Solve the system
-# sol = solve_ivp(stock_market, t_span, initial_conditions, t_eval=t_eval)
+# Solve the system
+sol = solve_ivp(stock_market, t_span, initial_conditions, t_eval=t_eval)
 
 # Plot the results
 fig = plt.figure(figsize=(10, 6))

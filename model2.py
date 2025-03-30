@@ -24,12 +24,12 @@
 # # Solve the system
 # sol = solve_ivp(stock_market, t_span, initial_conditions, t_eval=t_eval)
 
-# # Plot the results
-# fig = plt.figure(figsize=(10, 6))
-# ax = fig.add_subplot(projection='3d')
-# ax.plot(sol.y[0], sol.y[1], sol.y[2], lw=0.7, color='blue')
-# ax.set_xlabel("Stock Price (X)")
-# ax.set_ylabel("Market Sentiment (Y)")
-# ax.set_zlabel("External Factors (Z)")
-# ax.set_title("Chaotic Stock Market Simulation")
-# plt.show()
+# Plot the results
+fig = plt.figure(figsize=(10, 6))
+ax = fig.add_subplot(projection='3d')
+ax.plot(sol.y[0], sol.y[1], sol.y[2], lw=0.7, color='blue')
+ax.set_xlabel("Stock Price (X)")
+ax.set_ylabel("Market Sentiment (Y)")
+ax.set_zlabel("External Factors (Z)")
+ax.set_title("Chaotic Stock Market Simulation")
+plt.show()

@@ -1,4 +1,4 @@
-##=========A simple chaotic stock price model based on a modified Lorenz system======
+#---------A simple chaotic stock price model based on a modified Lorenz system--------
 
 import numpy as np
 import matplotlib.pyplot as plt

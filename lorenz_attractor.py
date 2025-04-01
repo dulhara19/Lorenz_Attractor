@@ -42,7 +42,6 @@ ax.set_ylabel("Y Axis")
 ax.set_zlabel("Z Axis")
 ax.set_title("Lorenz Attractor")
 
-
 plt.show()
 
 # ###############################################################################
@@ -99,7 +98,6 @@ def update(num):
 ani = animation.FuncAnimation(fig, update, frames=num_steps, interval=1, blit=True)
 
 plt.show()
-
 
 ########################################################################
 

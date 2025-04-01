@@ -42,6 +42,7 @@ ax.set_ylabel("Y Axis")
 ax.set_zlabel("Z Axis")
 ax.set_title("Lorenz Attractor")
 
+
 plt.show()
 
 # ###############################################################################
@@ -99,6 +100,9 @@ ani = animation.FuncAnimation(fig, update, frames=num_steps, interval=1, blit=Tr
 
 plt.show()
 
+
+
+
 #####################################################################################
 
 import matplotlib.pyplot as plt
@@ -148,7 +152,7 @@ ax.set_ylabel("Y Axis")
 ax.set_zlabel("Z Axis")
 ax.set_title("Animated Lorenz Attractors")
 
-# Create lines with different colors
+# Create lines with different colors 
 colors = ['r', 'g', 'b', 'm', 'c']
 lines = [ax.plot([], [], [], lw=1.5, color=colors[i])[0] for i in range(num_curves)]
 

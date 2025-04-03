@@ -2,6 +2,7 @@
 #
 # This code animates the Lorenz attractor using matplotlib's FuncAnimation.
 # It computes the trajectory of the Lorenz system for multiple initial conditions and updates the plot in real-time.
+# The animation shows the trajectory in 3D space, illustrating the chaotic nature of the system.
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.animation as animation

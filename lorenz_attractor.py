@@ -1,3 +1,7 @@
+# 
+# This script simulates the Lorenz attractor, a system of ordinary differential equations that exhibits chaotic behavior.
+# It uses the matplotlib library to create a 3D plot of the attractor's trajectory over time.
+
 import matplotlib.pyplot as plt
 import numpy as np
 
